@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The Glass Room</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -12,24 +13,20 @@
     <header>
         <section class="header">
             <div class="header_div">
-                <img src="" alt="">
+                <img class="logo" src="img/The_Glass_Room_Logo.png" alt="">
                 <div class="navigation">                    
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>                    
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>                   
                 </div>
                 <div class="button">
-                    <p>Sign in/Sign up</p>
+                    <button id="registration">Sign up</button>
                 </div>
-                <div class="burger"></div>
+                <!-- <div class="burger"></div> -->
             </div>
         </section>
-        
-        <section class="Slider">
 
-        </section>
 
     </header>
 
@@ -37,17 +34,184 @@
 
 
     <main>
-        <section class="Discover_Menu">
+
+
+
+        <div class="sign_up_div hidden" id="sign_up_div">
+            <h2>Sign up here</h2>
+            <input type="text" placeholder="Enter username">
+            <input type="email" placeholder="Enter your email">
+            <input type="text" placeholder="Enter Password">
+            <input type="text" placeholder="Repeat Password">
+
+            <button class="Done">Sign up</button>
+            
+        </div>
+        
+        <div class="successDiv hidden2">
+            <h2>Registration Successful!</h2>
+            <p>Thank you for signing up.</p>
+            <p class="close">X</p>
+        </div>
+
+
+
+        <section class="S1">
+            <div class="About_the_food_restaurant">
+                <div>
+                    <p>About the food restaurant</p>
+                    <h2 class="s1_maintext">New Ground with Dishes to be Enjoyed</h2>
+                </div>
+                <div>
+                    <div class="s1_imgdivs">
+                        <div class="s1_img_text">
+                            <img class="s1_img" src="img/img-box.png.png" alt="">
+                            <h2 class="s1_text">Restaurant</h2>
+                        </div>
+                        <div class="s1_img_text">
+                            <h2 class="s1_text">Coctail Bar</h2>
+                            <img class="s1_img2" src="img/img-box2.png.png" alt="">
+                        </div>
+                        <div class="s1_img_text">
+                            <img class="s1_img" src="img/img-box3.png.png" alt="">
+                            <h2 class="s1_text">Private Dining</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="S2">
+
+            <div class="s2_maindiv">
+                <div class="s2_div1">
+                    <div class="s2_miniDiv active" id="s2_miniDiv1">
+                        <img src="img/SVG.png" alt="">
+                        <p>Dessert</p>
+                    </div>
+                    <div class="s2_miniDiv" id="s2_miniDiv2">
+                        <img src="img/SVG2.png" alt="">
+                        <p>Steak</p>
+                    </div>
+                    <div class="s2_miniDiv" id="s2_miniDiv3">
+                        <img src="img/SVG3.png" alt="">
+                        <p>Coffee</p>
+                    </div>
+                    <div class="s2_miniDiv" id="s2_miniDiv4">
+                        <img src="img/SVG4.png" alt="">
+                        <p>Burger</p>
+                    </div>
+                </div>
+                <div class="s2_div2" id="s2_1">
+                    <div class="s2_imgdiv">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chocolate-molten-cakes-37a25eb.jpg" alt="">
+                    </div>
+                    <div class="s2_descr">
+                        <h2>Indulge in our handcrafted desserts, where every bite is a celebration of sweetness and artistry. From rich chocolate creations to light, fruity delights, our pastries are the perfect finale to your dining experience.</h2>
+                    </div>
+                </div>
+                <div class="s2_div2 hide" id="s2_2">
+                    <div class="s2_imgdiv">
+                        <img class="steak" src="https://justcook.butcherbox.com/wp-content/uploads/2019/11/Perfect-Pan-Seared-Ribeye-Steak.jpg" alt="">
+                    </div>
+                    <div class="s2_descr">
+                        <h2>Juicy, flavorful, and cooked just the way you like it — our steaks are all about great taste and good times. Served hot off the grill with your favorite sides, they’re a true comfort classic.</h2>
+                    </div>
+                </div>
+                <div class="s2_div2 hide" id="s2_3">
+                    <div class="s2_imgdiv">
+                        <img class="steak" src="https://t4.ftcdn.net/jpg/01/05/90/77/360_F_105907729_4RzHYsHJ2UFt5koUI19fc6VzyFPEjeXe.jpg" alt="">
+                    </div>
+                    <div class="s2_descr">
+                        <h2>From rich espressos to smooth lattes, our coffee is crafted with care and precision. Each cup is brewed from premium beans, offering the perfect balance of aroma, flavor, and warmth.</h2>
+                    </div>
+                </div>
+                <div class="s2_div2 hide" id="s2_4">
+                    <div class="s2_imgdiv">
+                        <img class="steak" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV56HBwj_ViD3qNykb3HT83D7931pxC5arwg&s" alt="">
+                    </div>
+                    <div class="s2_descr">
+                        <h2>Crafted with premium ingredients and grilled to perfection, our burgers combine juicy flavor with refined presentation. Every bite delivers a perfect harmony of taste and texture.</h2>
+                    </div>
+                </div>
+
+
+            </div>
+
 
         </section>
+        
+        <!-- Slider -->
 
-        <section class="Featured Dishes"></section>
+        <section class="S3">
+            <div class="S3_div">
 
+                <h2>Featured Dishes</h2>
+
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://www.thetakeout.com/img/gallery/so-what-exactly-is-wagyu-beef-anyway/intro-1724873729.jpg" alt="">
+                                    <h3>Wagyu Beef Steak</h3>
+                                    <p>59.99$</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://burgerbash.ca/wp-content/uploads/2025/03/GahanHouse_2025.jpg" alt="">
+                                    <h3>House Special Burger</h3>
+                                    <p>12.99$</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJxTss84Kpm3HyCa5mec7QKM2QBa2lLT84Aw&s" alt="">
+                                    <h3>Chicken Alfredo Pasta</h3>
+                                    <p>15.99$</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg" alt="">
+                                    <h3>Crispy Fried Chicken</h3>
+                                    <p>14.99$</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgr5pbdNS70AE50b9F3aUfTWPO3g3yJoGt2g&s" alt="">
+                                    <h3>Shroom Bacon Pizza</h3>
+                                    <p>18.99$</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div>
+                                    <img src="https://www.fluentincoffee.com/wp-content/uploads/2022/10/best-black-coffee.png" alt="">
+                                    <h3>Delicious Black Coffee</h3>
+                                    <p>6.99$</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
+    <footer class="footer_S">
+        <div class="footer_div">
+            <p>&copy;The Glass Room</p>
+            <p>N_T</p>
+        </div>
+    </footer>
 
 
-    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

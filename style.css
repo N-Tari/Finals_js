@@ -1,7 +1,10 @@
 
 
 /* Header */
-
+header {
+    background-color: white;
+    padding: 30px;
+}
 .header {
     width: 100%;
     height: 80px;
@@ -18,4 +21,313 @@
 
 .navigation {
     display: flex;
+    gap: 40px;
+}
+
+.navigation li a {
+    list-style: none;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+header button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(49, 51, 150);
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* body */
+
+/* body {
+    background-color: rgb(33, 25, 54);
+} */
+
+
+/* sign up */
+
+input {
+    width: 300px;
+    height: 40px;
+}
+
+.sign_up_div {
+    z-index: 10;
+    padding: 200px;
+    background-color: rgb(95, 104, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    border: black 5px solid;
+    border-radius: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.sign_up_div h2 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.sign_up_div button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.successDiv {
+    padding: 100px;
+    background-color: rgb(95, 224, 104);
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border: black 5px solid;
+    border-radius: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.hidden2 {
+    display: none;
+}
+
+
+
+/* Home page */
+
+
+/* S1 */
+.S1 {
+    width: 100%;
+    background-color: rgb(33, 25, 54);
+}
+.About_the_food_restaurant {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.About_the_food_restaurant div {
+    text-align: center;
+    
+}
+
+.About_the_food_restaurant div p {
+    font-size: large;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+
+}
+
+.s1_maintext {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.s1_imgdivs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s1_img2 {
+    margin-top: 50px;
+}
+
+.s1_img {
+    margin-bottom: 50px;
+}
+
+
+.s1_text {
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: yellow;
+    padding: 20px 40px;
+    border: black 3px solid;
+    border-radius: 15px;
+    color: black;
+}
+
+.s1_img, .s1_img2 {
+    max-width: 400px;
+}
+
+.s1_img, .s1_img2 {
+    max-width: 400px;
+} 
+
+
+
+
+/* S2 */
+
+.S2 {
+    color: white;
+    padding: 50px 0;
+    max-width: 100%;
+    height: 830px;
+    padding-top: 100px;
+    background-color: rgb(33, 25, 54);
+}
+
+.s2_maindiv {
+    max-width: 1330px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    border: black 3px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.s2_div1 {
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    text-align: center;
+}
+
+.active {
+    background-color: orange;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.s2_miniDiv p {
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+
+.s2_div2 {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.s2_imgdiv img {
+    border-radius: 20px;
+}
+
+.s2_descr {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+
+.steak {
+    width: 400px;
+}
+
+
+/* Slider */
+.S3 {
+    width: 100%;
+    background-color: rgb(33, 25, 54);
+}
+.S3_div {
+    color: white;
+    max-width: 1330px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.S3_div h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.splide__slide img {
+    width: 300px;
+}
+
+.splide__slide h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.splide__slide p {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.splide__slide {
+    padding-top: 25px;
+}
+
+.splide {
+    height: 400px;
+}
+
+
+/* Footer */
+
+.footer_div {
+    display: flex;
+    gap: 50px;
+    width: 240px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+}
+
+.footer_div p {
+    font-size: 20px;
+    
 }
