@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Chef Mario",
+    "role": "Italian Cuisine Specialist",
+    "bio": "With 15 years in traditional Italian kitchens, Mario brings passion and creativity to every dish."
+  },
+  {
+    "id": 2,
+    "name": "Chef Aiko",
+    "role": "Sushi & Japanese Fusion",
+    "bio": "Expert in Japanese culinary arts, Aiko combines authenticity with modern technique."
+  },
+  {
+    "id": 3,
+    "name": "Chef Lucas",
+    "role": "French Pastry Chef",
+    "bio": "Award-winning pastry chef known for elegant plating and delicate desserts."
+  }
+]

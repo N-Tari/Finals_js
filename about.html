@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,35 +12,62 @@
     <header>
         <section class="header">
             <div class="header_div">
-                <img src="" alt="">
+                <img class="logo" src="img/The_Glass_Room_Logo.png" alt="">
                 <div class="navigation">                    
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>                    
+                    <li><a href="contact.html">Contact</a></li>                   
                 </div>
-                <div class="button">
-                    <p>Sign in/Sign up</p>
+                <div class="header_right">
+                    <div class="button">
+                        <button id="registration">Sign up</button>
+                    </div>
+                    <div class="Burger_menu">
+                        <span></span>
+                    </div>
+                    <div class="Burger_nav">
+                        <ul>
+                            <li class="Burger_li"><a href="index.html">Home</a></li>
+                            <li class="Burger_li"><a href="about.html">About</a></li>
+                            <li class="Burger_li"><a href="menu.html">Menu</a></li>
+                            <li class="Burger_li"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>    
+                
+
                 </div>
-                <div class="burger"></div>
             </div>
         </section>
     </header>
 
 
     <main>
-        <section class="Customer_feedbacks">
-
-        </section>
-
-        <section class="Meet_our_experts">
-
-        </section>
-
-        <section class="Rescent_news">
-
+        <section class="About_s1">
+            <div class="Chefs_container">
+                <div class="chef">
+                    <img src="img/chef1.png.png" alt="">
+                    
+                    <button class="accordion_btn">Read More</button>
+                    <div class="accordion_content"></div>
+                </div>
+                <div class="chef">
+                    <img src="img/chef3-1.png.png" alt="">
+                    <button class="accordion_btn">Read More</button>
+                    <div class="accordion_content"></div>
+                </div>
+                <div class="chef">
+                    <img src="img/chef2.png.png" alt="">
+                    <button class="accordion_btn">Read More</button>
+                    <div class="accordion_content"></div>
+                </div>
+            </div>
         </section>
     </main>
+
+
+
+    <script src="burger.js"></script>
+    <script src="accordion.js"></script>
 </body>
 </html>

@@ -86,3 +86,7 @@ icon4.addEventListener("click", function() {
     icon2.classList.remove('active')
     icon3.classList.remove('active')
 });
+
+
+
+// accordion (fixed)

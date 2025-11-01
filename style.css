@@ -130,6 +130,121 @@ input {
     display: none;
 }
 
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Burger Bar */
+
+.NavBarHide {
+    display: none;
+}
+
+.Burger_menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.Burger_menu span,
+.Burger_menu span::before,
+.Burger_menu span::after {
+    background-color: black;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.Burger_menu span::before,
+.Burger_menu span::after {
+    content: '';
+}
+
+.Burger_menu span::before {
+    top: -10px;
+    width: 27px;
+}
+
+.Burger_menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+
+.Burger_menu span::after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+}
+
+.Burger_menu.close_burger span::before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+}
+
+.Burger_menu.close_burger span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+}
+
+.Burger_menu.close_burger span::after {
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+.Burger_nav {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Burger_nav.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background-color: blue;
+    color: white;
+}
+
+.Burger_nav ul {
+    padding: 0;
+    
+}
+
+.Burger_nav ul li a {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.buttonHide {
+    opacity: 0;
+}
+
 
 
 /* Home page */
@@ -220,7 +335,6 @@ input {
     flex-direction: column;
     border: black 3px solid;
     border-radius: 30px;
-    cursor: pointer;
 }
 
 .s2_div1 {
@@ -234,6 +348,10 @@ input {
     background-color: orange;
     padding: 30px;
     border-radius: 25px;
+}
+
+.s2_miniDiv {
+    cursor: pointer;
 }
 
 .s2_miniDiv p {
@@ -330,4 +448,75 @@ input {
 .footer_div p {
     font-size: 20px;
     
+}
+
+
+
+
+/* About Page */
+
+/* accordion chefs */
+
+.About_s1 {
+    width: 100%;
+}
+
+
+.Chefs_container {
+    display: flex;
+    max-width: 1330px;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin: 0 auto;
+    /* background-color: black; */
+}
+
+.chef {
+    max-width: 300px;
+    text-align: center;
+}
+
+.chef img {
+    width: 300px;
+    height: 395px;
+}
+
+.accordion_btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: solid black 2px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.accordion_btn:hover {
+    background-color: orange;
+}
+
+.accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: max-height 0.6s ease-in-out;
+
+    /* background-color: gray; */
+    /* padding: 0 10px; */
+}
+
+.accordion_content.On {
+    max-height: 200px;
+    /* padding: 10px; */
+}
+
+.accordion_content h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.accordion_content h4 {
+    font-size: 20px;
+    font-weight: bold;
 }
