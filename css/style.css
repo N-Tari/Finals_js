@@ -58,83 +58,47 @@ header button {
 
 /* sign up */
 
-input {
-    width: 300px;
-    height: 40px;
-}
-
-.sign_up_div {
-    z-index: 10;
-    padding: 200px;
-    background-color: rgb(95, 104, 224);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: larger;
-    border: black 5px solid;
-    border-radius: 30px;
-}
-
-.hidden {
-    display: none;
-}
-
-.sign_up_div h2 {
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.sign_up_div button {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(34, 34, 34);
-    color: white;
-    font-size: large;
-    font-weight: bolder;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-.successDiv {
-    padding: 100px;
-    background-color: rgb(95, 224, 104);
-    font-size: larger;
-    font-weight: bolder;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    border: black 5px solid;
-    border-radius: 30px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: xx-large;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.hidden2 {
-    display: none;
-}
-
 .header_right {
     display: flex;
     align-items: center;
 }
 
+.formsection {
+    padding: 150px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(179, 170, 170);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#registration div input {
+    font-size: 24px;
+}
+
+#registration button {
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#registration button:hover {
+    background-color: gray;
+}
+
+
+.errortext {
+    color: red;
+    font-size: 24px;
+}
+
+.passworddiv {
+    display: flex;
+    align-items: center;
+}
 
 /* Burger Bar */
 
@@ -519,4 +483,67 @@ input {
 .accordion_content h4 {
     font-size: 20px;
     font-weight: bold;
+}
+
+
+/* About_s2 */
+
+
+.About_s2_container {
+    max-width: 1330px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 125);
+    margin-top: 100px;
+}
+
+.About_s2_top {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.About_s2_top p {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.About_s2_top h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.About_s2_left {
+    padding: 20px;
+}
+
+.About_s2_left_divs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.About_icondivs {
+    width: 65px;
+    height: 65px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+}
+
+.About_icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_s2_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.About_s2_right {
+    padding: 20px;
 }

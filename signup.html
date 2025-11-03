@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glass Room Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="formsection">
+        <form action="" id="registration">
+            <div>
+                <input type="text" name="username" placeholder="Enter Username" id="username">
+                <p class="errortext" id="errorusername"></p>
+            </div>
+            <div>
+                <div class="passworddiv">
+                    <input type="password" name="passw" placeholder="Enter Password" id="password">
+                    <i class="fa-solid fa-eye" id="showpassword"></i>
+                </div>
+                <p class="errortext" id="errorpassword"></p>               
+            </div>
+            <div>
+                <input type="password" name="passw2" placeholder="Repeat Password" id="password2">
+                <p class="errortext" id="errorpassword2"></p>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Enter Email" id="email">
+                <p class="errortext" id="erroremail"></p>
+            </div>
+            <div>
+                <input type="radio" name="gender"  class="radioclass">
+                <label for="">Male</label>
+                <input type="radio" name="gender" class="radioclass">
+                <label for="">Female</label>
+                <p class="errortext" id="errorgender"></p>
+            </div>
+            <div>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I accept terms of service</label>
+                <p class="errortext" id="errorterms"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+<script src="js/registration.js"></script>
+</body>
+</html>

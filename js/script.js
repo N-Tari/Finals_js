@@ -1,32 +1,5 @@
 
-
-// sign up
-
-
-let signUp = document.getElementById("registration");
-let registrationDiv = document.getElementById('sign_up_div')
-let doneButton = document.querySelector('.Done');
-let successDiv = document.querySelector('.successDiv');
-let closeButton = document.querySelector('.close');
-
-
-signUp.addEventListener("click", function() {
-    registrationDiv.classList.remove('hidden');
-});
-
-doneButton.addEventListener("click", function() {
-    successDiv.classList.remove('hidden2');
-    registrationDiv.classList.add('hidden');
-});
-
-
-closeButton.addEventListener("click", function() {
-    successDiv.classList.add('hidden2');
-});
-
-
-
-// accordioish
+// accordionish
 
 
 let icon1 = document.getElementById("s2_miniDiv1")
