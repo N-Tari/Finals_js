@@ -1,6 +1,4 @@
-let acciordionFnc = function() {
-
-
+export function acciordionFnc() {
 
   document.addEventListener('DOMContentLoaded', () => {
     const chefDivs = document.querySelectorAll('.chef');
@@ -54,4 +52,3 @@ let acciordionFnc = function() {
   });
 };
 
-acciordionFnc()

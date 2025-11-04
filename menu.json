@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Margherita Pizza",
+    "price": 10.99,
+    "description": "Fresh tomatoes, mozzarella cheese, and basil."
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "price": 12.99,
+    "description": "Loaded with pepperoni slices and melted mozzarella."
+  },
+  {
+    "name": "BBQ Chicken Pizza",
+    "price": 13.99,
+    "description": "Grilled chicken, BBQ sauce, and red onions."
+  },
+  {
+    "name": "Four Cheese Pizza",
+    "price": 14.49,
+    "description": "Mozzarella, cheddar, parmesan & gorgonzola."
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "price": 13.50,
+    "description": "Traditional Italian pasta with meaty tomato sauce."
+  },
+  {
+    "name": "Chicken Alfredo Pasta",
+    "price": 14.75,
+    "description": "Creamy alfredo sauce with grilled chicken."
+  },
+  {
+    "name": "Veggie Supreme Salad",
+    "price": 9.25,
+    "description": "Mixed greens with cucumber, tomato & vinaigrette."
+  },
+  {
+    "name": "Caesar Salad",
+    "price": 8.99,
+    "description": "Romaine lettuce, croutons & creamy caesar dressing."
+  },
+  {
+    "name": "Classic Cheeseburger",
+    "price": 11.99,
+    "description": "Beef patty with cheddar, lettuce, tomato & pickles."
+  },
+  {
+    "name": "Bacon Burger",
+    "price": 13.50,
+    "description": "Crispy bacon, melted cheese, and special sauce."
+  },
+  {
+    "name": "Grilled Chicken Sandwich",
+    "price": 10.50,
+    "description": "Char-grilled chicken breast & fresh toppings."
+  },
+  {
+    "name": "French Fries",
+    "price": 4.99,
+    "description": "Crispy golden fries seasoned with herbs."
+  },
+  {
+    "name": "Onion Rings",
+    "price": 5.50,
+    "description": "Golden-battered onion rings served with dip."
+  },
+  {
+    "name": "Chocolate Lava Cake",
+    "price": 6.99,
+    "description": "Warm chocolate cake with gooey center."
+  },
+  {
+    "name": "Fresh Lemonade",
+    "price": 3.99,
+    "description": "Freshly squeezed lemons with ice."
+  },
+  {
+    "name": "Iced Coffee",
+    "price": 4.50,
+    "description": "Chilled brewed coffee with cream."
+  }
+]

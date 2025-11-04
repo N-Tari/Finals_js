@@ -4,11 +4,18 @@
 header {
     background-color: white;
     padding: 30px;
+    position: sticky;
+    top: 0;
+    opacity: 0.8;
 }
 .header {
     width: 100%;
     height: 80px;
     display: flex;
+}
+
+.header.hideHeader {
+    display: none;
 }
 
 .header_div {
@@ -269,11 +276,11 @@ header button {
 }
 
 .s1_img, .s1_img2 {
-    max-width: 400px;
+    max-width: 325px;
 }
 
 .s1_img, .s1_img2 {
-    max-width: 400px;
+    max-width: 325px;
 } 
 
 
@@ -547,3 +554,371 @@ header button {
 .About_s2_right {
     padding: 20px;
 }
+
+
+
+/* scroll to top */
+
+.scrool_to_top {
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+    position: relative;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* menu */
+
+.MenuMainDiv {
+    max-width: 1330px;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+    height: 700px;
+    margin-top: 100px;
+}
+
+.MenuMainDiv input {
+    margin: 30px;
+    padding: 10px 20px;
+}
+
+.MenuMainDiv h2 {
+    font-size: 32px;
+    color: green;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#menuContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+#menuContainer div h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#menuContainer div p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#menuContainer div {
+    margin-bottom: 25px;
+}
+
+
+/* cookie */
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #eee;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.cookie-consent.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cookie-consent .cookie-consent-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cookie-consent .consent-btn {
+  background: #c0851a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-left: 12px;
+}
+
+.cookie-consent .consent-btn:hover {
+  background: #a56e14;
+}
+
+
+
+
+
+
+/* responsive */
+
+
+@media only screen and (max-width:1024px) {
+    .navigation {
+        display: none;
+    }
+    /* s1 */
+    .s1_img_text {
+        max-width: 250px;
+    }
+    .s1_img_text img {
+        max-width: 250px;
+    }
+    /* s2 */
+    .s2_maindiv {
+        max-width: 800px;
+    }
+    .s2_descr {
+        font-size: 20px;
+    }
+    .s2_imgdiv img {
+        max-width: 300px;
+    }
+    .s2_miniDiv img {
+        width: 40px;
+    }
+
+
+    /* s1 ABOUT */
+    .chef {
+        max-width: 250px;
+    }
+    .chef img {
+        max-width: 250px;
+        height: auto;
+    }
+    .About_s2_right iframe {
+        width: 400px;
+    }
+    .About_s2_container {
+        max-width: 800px;
+    }
+
+
+    /* Menu */ 
+
+    #menuContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    header button {
+        width: 100px;
+        height: 30px;
+        font-size: medium;
+    }
+    /* s1 */
+    .s1_imgdivs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .s1_img_text h2 {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .s1_img {
+        margin-bottom: 25px;
+    }
+    .s1_img2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    /* s2 */
+    .s2_maindiv {
+        max-width: 400px;    
+        height: 500px;
+    }
+    .s2_descr {
+        font-size: 14px;
+    }
+    .s2_imgdiv img {
+        max-width: 200px;
+    }
+    .s2_miniDiv img {
+        width: 25px;
+    }
+    .active {
+        padding: 15px;
+    }
+
+    /* s3 */
+    .splide__slide img {
+        width: 150px;
+    }
+    .splide__slide h3 {
+        font-size: 20px;
+    }
+    .splide__slide p {
+        font-size: 16px;
+    }
+
+
+    /* s1 ABOUT */
+    .Chefs_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .About_s2_right iframe {
+        width: 200px;
+        height: 200px;
+    }
+    .About_icondivs {
+        width: 40px;
+        height: 40px;
+    }
+    .About_s2_top h2 {
+        font-size: 24px;
+    }
+    .About_s2_top p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* header */
+    header button {
+        width: 40px;
+        height: 30px;
+        font-size: small;
+    }
+    .logo {
+        width: 100px;
+    }
+    .burger_menu {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* s2 */
+    .s2_maindiv {
+        max-width: 300px;    
+        height: 400px;
+    }
+    .s2_descr {
+        font-size: 10px;
+    }
+    .s2_imgdiv img {
+        max-width: 150px;
+    }
+    .s2_miniDiv img {
+        width: 20px;
+    }
+    .active {
+        padding: 12px;
+    }
+    .s2_div1 {
+        gap: 10px;
+    }
+    .S2 {
+        height: 600px;
+    }
+
+    /* s3 */
+    .S3_div h2 {
+        font-size: 24px;
+    }
+    .splide__slide img {
+        width: 100px;
+    }
+    .splide__slide h3 {
+        font-size: 16px;
+    }
+    .splide__slide p {
+        font-size: 12px;
+    }
+    .splide {
+        height: 250px;
+    }
+
+    /* s2 ABOUT */
+
+    .About_s2_right iframe {
+        width: 100px;
+        height: 100px;
+    }
+    .About_s2_left_divs {
+        gap: 10px;
+    }
+    .About_s2_left_divs p {
+        font-size: 12px;
+    }
+    .About_icondivs {
+        width: 25px;
+        height: 25px;
+    }
+    .About_icondivs i {
+        font-size: 12px;
+    }
+
+    /* Menu */
+    #menuContainer div h3 {
+        font-size: 16px;
+    }
+    #menuContainer div p {
+        font-size: 12px;
+    }
+    .MenuMainDiv h2 {
+        font-size: 24px;
+    }
+    .MenuMainDiv input {
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_S {
+    background-color: lightgray;
+}
+
+
+

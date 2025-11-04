@@ -4,27 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <section class="header">
             <div class="header_div">
-                <img src="" alt="">
+                <img class="logo" src="img/The_Glass_Room_Logo.png" alt="">
                 <div class="navigation">                    
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="shop.html">Shop</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>                    
+                    <li><a href="contact.html">Contact</a></li>                   
                 </div>
-                <div class="button">
-                    <p>Sign in/Sign up</p>
+                <div class="header_right">
+                    <div class="button">
+                        <a href="signup.html"><button id="registration">Sign up</button></a>
+                    </div>
+                    <div class="Burger_menu">
+                        <span></span>
+                    </div>
+                    <div class="Burger_nav">
+                        <ul>
+                            <li class="Burger_li"><a href="index.html">Home</a></li>
+                            <li class="Burger_li"><a href="about.html">About</a></li>
+                            <li class="Burger_li"><a href="menu.html">Menu</a></li>
+                            <li class="Burger_li"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>                  
                 </div>
-                <div class="burger"></div>
             </div>
         </section>
     </header>
+
+    <main>
+        <section>
+            <div class="MenuMainDiv">
+                <h2>Our Menu</h2>
+
+                <input type="text" id="searchInput" placeholder="Search menu..." />
+                <div id="menuContainer"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer_S">
+        <div class="footer_div">
+            <p>&copy;The Glass Room</p>
+            <p>N_T</p>
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="js/menu.js"></script>
 </body>
 </html>
