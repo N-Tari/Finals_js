@@ -588,8 +588,9 @@ header button {
     max-width: 1330px;
     margin: 0 auto;
     /* background-color: lightblue; */
-    height: 700px;
+    height: 1000px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .MenuMainDiv input {

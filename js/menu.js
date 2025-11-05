@@ -7,7 +7,6 @@ let menuItems = [];
 const container = document.getElementById("menuContainer");
 const searchInput = document.getElementById("searchInput");
 
-// Fetch GET Menu JSON
 fetch("menu.json")
   .then(response => response.json())
   .then(data => {
@@ -16,7 +15,6 @@ fetch("menu.json")
   })
   .catch(error => console.error("Error loading menu:", error));
 
-// Display menu on page
 function displayMenu(items) {
   container.innerHTML = "";
   items.forEach(item => {
@@ -31,7 +29,6 @@ function displayMenu(items) {
   });
 }
 
-// Live search filter
 searchInput.addEventListener("keyup", () => {
   const keyword = searchInput.value.toLowerCase();
   const filtered = menuItems.filter(item =>

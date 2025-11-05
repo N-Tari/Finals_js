@@ -25,7 +25,7 @@ form.addEventListener('submit', function(event) {
 
     let gender = false;
 
-    // select radio inputs correctly and check if any is selected
+    
     this.querySelectorAll('.radioclass').forEach(function(radio) {
         if (radio.checked) {
             gender = true;
@@ -57,10 +57,7 @@ form.addEventListener('submit', function(event) {
     }
 
     if (Object.keys(errors).length === 0) {
-        // no validation errors — redirect to index.html
-        // use replace if you don't want users to navigate back to the signup page
         window.location.href = 'index.html';
-        // alternatively: window.location.replace('index.html');
     }
 
 });
